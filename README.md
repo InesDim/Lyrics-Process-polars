@@ -1,48 +1,75 @@
-# Lyrics-Process-polars
+# Lyrics Processing with Polars
 
-## Overview
+## Description
 
-This project performs an in-depth analysis of song lyrics, focusing on text compression. By leveraging the Polars DataFrame library, it processes large datasets efficiently to explore various compression techniques and their effectiveness on song lyrics.
+This project demonstrates how to leverage the high-performance Polars library to process and analyze song lyrics data. It showcases various data manipulation techniques, including filtering, aggregation, and text analysis. Polars offers a powerful alternative to pandas, making this notebook especially valuable for those dealing with large datasets or seeking enhanced processing speed.
 
 ## Features
 
-Data Loading: Reads and processes song lyrics and metadata.
-Text Size Measurement:
-Calculates the length of lyrics.
-Determines the byte size of lyrics in UTF-8 encoding.
-Compression Analysis:
-Applies multiple compression algorithms, including gzip, zlib, and bz2.
-Measures the compressed size of lyrics and calculates compression ratios.
-Export Results: Outputs analyzed data to a CSV file for further exploration.
-Technologies Used
+Efficient Data Loading and Processing: Leverages Polars for handling large datasets with optimized memory usage.
 
-## Python
-Polars: High-performance DataFrame library.
-Compression Libraries: gzip, zlib, bz2, and others.
-Getting Started
+Text Filtering: Implements methods to filter lyrics based on specific criteria such as word presence or text patterns.
 
-Clone the repository and navigate to the project directory.
-Install the required Python libraries:
-pip install polars, pandas
-Run the Jupyter Notebook or Python script to analyze lyrics data:
-jupyter notebook Lyrics_Songs_Analysis_with_Polars.ipynb
+Data Transformation: Demonstrates how to clean and transform data for further analysis or visualization.
 
-## Input Data
-CSV file containing:
-song: Song title.
-artist: Artist name.
-genre: Genre of the song.
-year: Release year.
-lyrics: Full lyrics of the song.
+Exploratory Analysis: Provides insights into the dataset, such as word frequency or sentiment analysis (if applicable).
 
-##Output
-CSV file with additional columns:
-Length of lyrics.
-Original size in bytes.
-Compressed size using various algorithms.
-Compression ratios.
+## Requirements
 
-## Descriptive Summary for the Notebook
-Title: Lyrics Compression and process with Polars
+Python 3.8+
 
-This notebook explores the application of various text compression algorithms to song lyrics. By measuring the compression efficiency of different algorithms, it provides insights into how lyrical content can be optimized for storage or transmission. Key steps include calculating the original and compressed sizes of lyrics, deriving compression ratios, and exporting results for visualization or further analysis.
+## Libraries:
+
+Polars
+
+Any additional libraries (e.g., matplotlib, nltk) if applicable based on the notebook content
+
+## Installation
+
+### Clone this repository:
+
+git clone <repository_url>
+cd <repository_folder>
+
+### Create a virtual environment and activate it:
+
+python -m venv env
+source env/bin/activate # On Windows use `env\Scripts\activate`
+
+### Install the required libraries:
+
+pip install -r requirements.txt
+
+## Usage
+
+Open the Jupyter Notebook:
+
+jupyter notebook Lyrics_Songs_Process_With_Polars.ipynb
+
+Follow the step-by-step instructions in the notebook to process and analyze the lyrics data.
+
+## Dataset
+
+Make sure to include your dataset in the appropriate directory or update the file paths in the notebook to reflect your dataset's location. Ensure the dataset contains the necessary columns (e.g., lyrics, artist, title).
+
+## Examples
+
+Here are some of the tasks you can perform with this notebook:
+
+Filter songs containing specific keywords in their lyrics.
+
+Count occurrences of particular words or phrases across the dataset.
+
+Prepare the data for machine learning or visualization tasks.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+
+## Acknowledgments
+
+The Polars library for providing a high-performance DataFrame solution.
+
+The contributors and maintainers of Python and its ecosystem of libraries.
+
